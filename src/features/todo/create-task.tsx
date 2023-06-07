@@ -1,12 +1,8 @@
 import { FC } from 'react';
-import { redirect, useRouter } from 'next/navigation';
+import { redirect } from 'next/navigation';
 
 import prisma from '@/src/lib/prisma';
 import { routes } from '@/src/config';
-
-type CreateTaskDto = {
-  title: string;
-};
 
 export const CreateTask: FC = () => {
   const createTask = async (formData: FormData) => {

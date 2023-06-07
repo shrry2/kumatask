@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 
 import { routes } from '@/src/config';
+import { FaceSmileIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
   { name: 'Home', href: routes.home },
@@ -14,10 +15,7 @@ export const Header: FC = () => {
       <nav className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href={routes.home} className="-m-1.5 p-1.5">
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            />
+            <FaceSmileIcon className="h-8 w-auto" />
           </Link>
         </div>
         <div className="flex gap-x-12">

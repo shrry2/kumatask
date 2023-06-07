@@ -2,7 +2,6 @@ import { Inter } from 'next/font/google';
 
 import './globals.css';
 
-import { Hero } from '@/src/components/layout/hero';
 import { Header } from '@/src/components/layout/header';
 
 export const metadata = {
